@@ -1,0 +1,4 @@
+.list-cell {
+    -fx-background-color: -fx-background;
+    -fx-text-fill: -fx-text-background-color;
+}

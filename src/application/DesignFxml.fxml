@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.util.ArrayList?>
+<?import javafx.scene.paint.Paint?>
+<?import javafx.collections.ObservableList?>
+
+
+<VBox fx:controller ="application.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" style="-fx-background-color: #14313D;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="372.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="CANCEL" focusTraversable="false" graphicTextGap="10.0" layoutX="54.0" layoutY="32.0" mnemonicParsing="false" style="-fx-background-radius: 0; -fx-border-color: #99E3A9; -fx-border-width: 3; -fx-background-color: #68Cd7E;" text="전체선택" textAlignment="JUSTIFY" textFill="WHITE" onAction="#SELECT_All_N_CANCEL">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="242.4" layoutX="54.0" layoutY="65.0" stroke="#ffffff00" strokeType="INSIDE" strokeWidth="2.3" style="-fx-fill: #0000; -fx-stroke: #99E3A9;" width="492.52" />
+            <ScrollPane layoutX="56.0" layoutY="67.0" prefHeight="238.0" prefWidth="488.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="560.0" prefWidth="472.0">
+                     <children>
+                        <ListView layoutY="0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="28.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="56.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="84.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="112.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="140.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="168.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="196.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="224.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="252.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="280.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="308.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="336.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="364.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="392.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="420.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="448.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="476.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="504.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <ListView layoutY="532.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #dd4232; -fx-border-color: #911002;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ListView>
+                        <CheckBox fx:id="selectNcancel0" layoutX="6.0" layoutY="6.0" mnemonicParsing="false" onAction="#SELECT_INDEX"/>
+                        <CheckBox fx:id="selectNcancel1" layoutX="6.0" layoutY="34.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="selectNcancel2" layoutX="6.0" layoutY="62.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="selectNcancel3" layoutX="6.0" layoutY="90.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="selectNcancel4" layoutX="6.0" layoutY="118.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="selectNcancel5" layoutX="6.0" layoutY="146.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="selectNcancel6" layoutX="6.0" layoutY="174.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="selectNcancel7" layoutX="6.0" layoutY="202.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="selectNcancel8" layoutX="6.0" layoutY="229.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="selectNcancel9" layoutX="6.0" layoutY="257.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="selectNcancel10" layoutX="6.0" layoutY="286.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="selectNcancel11" layoutX="6.0" layoutY="314.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="selectNcancel12" layoutX="6.0" layoutY="342.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="selectNcancel13" layoutX="6.0" layoutY="370.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="selectNcancel14" layoutX="6.0" layoutY="398.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="selectNcancel15" layoutX="6.0" layoutY="426.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="selectNcancel16" layoutX="6.0" layoutY="454.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="selectNcancel17" layoutX="6.0" layoutY="482.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="selectNcancel18" layoutX="6.0" layoutY="510.0" mnemonicParsing="false" />
+                        <Line endX="-100.00001525878906" endY="522.2000122070312" fill="#bfbfbf" layoutX="129.0" layoutY="38.0" startX="-100.00001525878906" startY="-39.40000534057617" stroke="#bfbfbf" strokeWidth="2.3" style="-fx-stroke: #911002;" />
+                        <Line endX="-100.00001525878906" endY="522.2000122070312" fill="#bfbfbf" layoutX="254.0" layoutY="38.0" startX="-100.00001525878906" startY="-39.40000534057617" stroke="#bfbfbf" strokeWidth="2.3" style="-fx-stroke: #911002;" />
+                        <CheckBox fx:id="selectNcancel19" layoutX="6.0" layoutY="538.0" mnemonicParsing="false" />
+                        
+                        <fx:define>
+			            <ArrayList fx:id="SELECT_ALL_N_CANCEL_FIELD_LIST" >
+			            <fx:reference source="selectNcancel0"/>
+			            <fx:reference source="selectNcancel1"/>
+			            <fx:reference source="selectNcancel2"/>
+			            <fx:reference source="selectNcancel3"/>
+			            <fx:reference source="selectNcancel4"/>
+			            <fx:reference source="selectNcancel5"/>
+			            <fx:reference source="selectNcancel6"/>
+			            <fx:reference source="selectNcancel7"/>
+			            <fx:reference source="selectNcancel8"/>
+			            <fx:reference source="selectNcancel9"/>
+			            <fx:reference source="selectNcancel10"/>
+			            <fx:reference source="selectNcancel11"/>
+			            <fx:reference source="selectNcancel12"/>
+			            <fx:reference source="selectNcancel13"/>
+			            <fx:reference source="selectNcancel14"/>
+			            <fx:reference source="selectNcancel15"/>
+			            <fx:reference source="selectNcancel16"/>
+			            <fx:reference source="selectNcancel17"/>
+			            <fx:reference source="selectNcancel18"/>
+			            <fx:reference source="selectNcancel19"/>
+			            </ArrayList>
+			            </fx:define>
+                        
+                        <TextField fx:id ="TextField0" layoutX="30.0" layoutY="3.0" prefHeight="22.0" prefWidth="122.0" style="-fx-background-color: transparent;" />
+                        <TextField fx:id ="TextField1" layoutX="30.0" layoutY="31.0" prefHeight="22.0" prefWidth="122.0"   style="-fx-background-color: transparent;"/>
+                        <TextField fx:id ="TextField2" layoutX="30.0" layoutY="59.0" prefHeight="22.0" prefWidth="122.0"   style="-fx-background-color: transparent;"/>
+                        <TextField fx:id ="TextField3" layoutX="30.0" layoutY="87.0" prefHeight="22.0" prefWidth="122.0"   style="-fx-background-color: transparent;"/>
+                        <TextField fx:id ="TextField4" layoutX="30.0" layoutY="115.0" prefHeight="22.0" prefWidth="122.0"  style="-fx-background-color: transparent;"/>
+                        <TextField fx:id ="TextField5" layoutX="30.0" layoutY="142.0" prefHeight="22.0" prefWidth="122.0"  style="-fx-background-color: transparent;"/>
+                        <TextField fx:id ="TextField6" layoutX="30.0" layoutY="170.0" prefHeight="22.0" prefWidth="122.0"  style="-fx-background-color: transparent;"/>
+                        <TextField fx:id ="TextField7" layoutX="30.0" layoutY="199.0" prefHeight="22.0" prefWidth="122.0"  style="-fx-background-color: transparent;"/>
+                        <TextField fx:id ="TextField8" layoutX="30.0" layoutY="227.0" prefHeight="22.0" prefWidth="122.0"  style="-fx-background-color: transparent;"/>
+                        <TextField fx:id ="TextField9" layoutX="30.0" layoutY="255.0" prefHeight="22.0" prefWidth="122.0"  style="-fx-background-color: transparent;"/>
+                        <TextField fx:id ="TextField10" layoutX="30.0" layoutY="283.0" prefHeight="22.0" prefWidth="122.0" style="-fx-background-color: transparent;"/>
+                        <TextField fx:id ="TextField11" layoutX="30.0" layoutY="311.0" prefHeight="22.0" prefWidth="122.0" style="-fx-background-color: transparent;"/>
+                        <TextField fx:id ="TextField12" layoutX="30.0" layoutY="339.0" prefHeight="22.0" prefWidth="122.0" style="-fx-background-color: transparent;"/>
+                        <TextField fx:id ="TextField13" layoutX="30.0" layoutY="367.0" prefHeight="22.0" prefWidth="122.0" style="-fx-background-color: transparent;"/>
+                        <TextField fx:id ="TextField14" layoutX="30.0" layoutY="395.0" prefHeight="22.0" prefWidth="122.0" style="-fx-background-color: transparent;"/>
+                        <TextField fx:id ="TextField15" layoutX="30.0" layoutY="422.0" prefHeight="22.0" prefWidth="122.0" style="-fx-background-color: transparent;"/>
+                        <TextField fx:id ="TextField16" layoutX="30.0" layoutY="450.0" prefHeight="22.0" prefWidth="122.0" style="-fx-background-color: transparent;"/>
+                        <TextField fx:id ="TextField17" layoutX="30.0" layoutY="478.0" prefHeight="22.0" prefWidth="122.0" style="-fx-background-color: transparent;"/>
+                        <TextField fx:id ="TextField18" layoutX="30.0" layoutY="506.0" prefHeight="22.0" prefWidth="122.0" style="-fx-background-color: transparent;"/>
+                        <TextField fx:id ="TextField19" layoutX="30.0" layoutY="534.0" prefHeight="22.0" prefWidth="122.0" style="-fx-background-color: transparent;"/>
+                        
+			            <fx:define>
+			            <ArrayList fx:id="TextFieldList" >
+			            <fx:reference source="TextField0"/>
+			            <fx:reference source="TextField1"/>
+			            <fx:reference source="TextField2"/>
+			            <fx:reference source="TextField3"/>
+			            <fx:reference source="TextField4"/>
+			            <fx:reference source="TextField5"/>
+			            <fx:reference source="TextField6"/>
+			            <fx:reference source="TextField7"/>
+			            <fx:reference source="TextField8"/>
+			            <fx:reference source="TextField9"/>
+			            <fx:reference source="TextField10"/>
+			            <fx:reference source="TextField11"/>
+			            <fx:reference source="TextField12"/>
+			            <fx:reference source="TextField13"/>
+			            <fx:reference source="TextField14"/>
+			            <fx:reference source="TextField15"/>
+			            <fx:reference source="TextField16"/>
+			            <fx:reference source="TextField17"/>
+			            <fx:reference source="TextField18"/>
+			            <fx:reference source="TextField19"/>
+			            </ArrayList>
+			            </fx:define>
+                        
+                        <Line endX="-100.00001525878906" endY="522.2000122070312" fill="#bfbfbf" layoutX="507.0" layoutY="35.0" startX="-100.00001525878906" startY="-39.40000534057617" stroke="#bfbfbf" strokeWidth="2.3" style="-fx-stroke: #911002;" />
+                        <AnchorPane>
+                        <children>                       
+                        
+                        <ComboBox fx:id="combo_box0" layoutX="408.0" layoutY="1.0" prefHeight="14.0" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="29.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="57.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="85.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="113.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="141.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="169.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="197.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="225.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="365.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="281.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="309.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="337.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="253.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="393.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="421.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="449.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="477.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="505.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        <ComboBox layoutX="408.0" layoutY="533.0" prefHeight="24.3" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ComboBox>
+                        </children>
+                        </AnchorPane>
+                        
+                        <TextFlow layoutX="154.0" layoutY="-1.0" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>
+                        
+						<TextFlow layoutX="154.0" layoutY="27" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC1" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>
+                        
+						<TextFlow layoutX="154.0" layoutY="55" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC2" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>                        
+
+						<TextFlow layoutX="154.0" layoutY="83" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC3" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>
+                        
+						<TextFlow layoutX="154.0" layoutY="111" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC4" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>
+                                                
+						<TextFlow layoutX="154.0" layoutY="139" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC5" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>
+                        
+						<TextFlow layoutX="154.0" layoutY="167" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC6" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>
+                        
+						<TextFlow layoutX="154.0" layoutY="195" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC7" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>  
+                        
+						<TextFlow layoutX="154.0" layoutY="223" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC8" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>
+			 <TextFlow layoutX="154.0" layoutY="251" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC9" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>   
+			 <TextFlow layoutX="154.0" layoutY="279" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC10" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>   
+			 <TextFlow layoutX="154.0" layoutY="307" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC11" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>   
+			 <TextFlow layoutX="154.0" layoutY="335" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC12" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>   
+			 <TextFlow layoutX="154.0" layoutY="363" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC13" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>   
+			 <TextFlow layoutX="154.0" layoutY="391" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC14" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>   
+			 <TextFlow layoutX="154.0" layoutY="419" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC15" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>   
+			 <TextFlow layoutX="154.0" layoutY="447" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC16" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>   
+			 <TextFlow layoutX="154.0" layoutY="475" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC17" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>   
+			 <TextFlow layoutX="154.0" layoutY="503" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC18" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>   
+			 <TextFlow layoutX="154.0" layoutY="531" prefHeight="28.0" prefWidth="253.0">
+                        	<children>
+                        		<Text fx:id ="DC19" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                        		<font>
+                        			<Font name="Verdana" size="12.0" />
+                        		</font>
+                        		</Text>
+                        		
+                        	</children>
+                        </TextFlow>                                                                                                   
+                    <fx:define>
+                    <ArrayList fx:id="FilePathNameFieldList" >
+             		<fx:reference source="DC0"/>
+             		<fx:reference source="DC1"/>
+             		<fx:reference source="DC2"/>
+             		<fx:reference source="DC3"/>
+             		<fx:reference source="DC4"/>
+             		<fx:reference source="DC5"/>
+             		<fx:reference source="DC6"/>
+             		<fx:reference source="DC7"/>
+             		<fx:reference source="DC8"/>
+             		<fx:reference source="DC9"/>
+             		<fx:reference source="DC10"/>
+             		<fx:reference source="DC11"/>
+             		<fx:reference source="DC12"/>
+             		<fx:reference source="DC13"/>
+             		<fx:reference source="DC14"/>
+             		<fx:reference source="DC15"/>
+             		<fx:reference source="DC16"/>
+             		<fx:reference source="DC17"/>
+             		<fx:reference source="DC18"/>
+             		<fx:reference source="DC19"/>
+             		</ArrayList>
+             		</fx:define>
+             		
+             		
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <MenuBar prefHeight="28.0" prefWidth="600.0" style="-fx-background-color: #98ddde;">
+              <menus>
+                <Menu mnemonicParsing="false" text="파일">
+                  <items>
+                        <MenuItem mnemonicParsing="false" text="파일열기" onAction="#open" />
+                    <MenuItem mnemonicParsing="false" text="파일 폴더 지정(열기)" onAction="#open_Folder_File"/>
+                    <MenuItem mnemonicParsing="false" text="저장(+변환)" />
+                    <MenuItem mnemonicParsing="false" text="저장 위치 지정" />
+                    <MenuItem mnemonicParsing="false" text="이름일괄처리" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="파싱">
+                  <items>
+                        <MenuItem mnemonicParsing="false" text="파싱 내용 지정" />
+                        <MenuItem mnemonicParsing="false" text="데이터통합유무" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <SepiaTone level="0.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </MenuBar>
+            <Button focusTraversable="false" graphicTextGap="10.0" layoutX="132.0" layoutY="32.0" mnemonicParsing="false" style="-fx-background-radius: 0; -fx-border-color: #99E3A9; -fx-border-width: 3; -fx-background-color: #68Cd7E;" text="삭제" textAlignment="JUSTIFY" textFill="WHITE" onAction="#DELETE_LIST">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</VBox>

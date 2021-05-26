@@ -32,8 +32,7 @@ private int SELECT_COUNT = 0;
 private int[] SELECT_ARRAY = new int[20];
 private boolean SELECT_CHECK = false;
 private int SELECT_START = 0;
-private int SELECT_INDEX = 0;
-
+private String[] N_OF_INDEX_SELECTS = new String[20];
 @FXML
 public ComboBox<String> combo_box0;
 
@@ -81,14 +80,12 @@ public void open_Folder_File(ActionEvent event)
 public void SELECT_INDEX(ActionEvent event)
 {
 	for (CheckBox SUCCESE_CHECK_CHECKBOX : SELECT_ALL_N_CANCEL_FIELD_LIST) {
-		 if(SUCCESE_CHECK_CHECKBOX.isSelected())
-		 {
-			    SUCCESE_CHECK_CHECKBOX.setSelected(true);
-		 }
-		 else
-		 {
-			 SUCCESE_CHECK_CHECKBOX.setSelected(false);
-		 }
+		//if(SUCCESE_CHECK_CHECKBOX.getId())
+			// {	 
+			
+			// }
+		// }
+		//체크박스 클릭시 textfield getid, combobox item getid String 으로 저장
 	}
 }
 
@@ -105,11 +102,6 @@ public void SELECT_All_N_CANCEL(ActionEvent event)
 	 if(SUCCESE_CHECK_CHECKBOX.isSelected() && SELECT_START == 1) { 	    	
 		 SUCCESE_CHECK_CHECKBOX.setSelected(false);
 		 CANCEL.setText("전체선택");
-		 if(SUCCESE_CHECK_CHECKBOX.equals("selectNcancel19"))
-		 {	 
-			 SELECT_CHECK = false;
-			 break;
-		 }
 	 }
 }
 	SELECT_START +=1;
@@ -128,11 +120,6 @@ public void initialize(URL location, ResourceBundle resources) {
     combo_box0.setItems(stateList);
 
 }
-/*
-public void comboChanged(ActionEvent event){
-    System.out.println("chose the " + combo_box0.getValue().toString());
-}
-*/
 
 
 }

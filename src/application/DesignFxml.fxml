@@ -144,8 +144,8 @@
                               <Cursor fx:constant="DEFAULT" />
                            </cursor>
                         </ListView>
-                        <CheckBox fx:id="selectNcancel0" layoutX="6.0" layoutY="6.0" mnemonicParsing="false" onAction="#SELECT_INDEX"/>
-                        <CheckBox fx:id="selectNcancel1" layoutX="6.0" layoutY="34.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="selectNcancel0" userData="0" layoutX="6.0" layoutY="6.0" mnemonicParsing="false" onAction="#SELECT_INDEX"/>
+                        <CheckBox fx:id="selectNcancel1" layoutX="6.0" layoutY="34.0" mnemonicParsing="false" onAction="#SELECT_INDEX"/>
                         <CheckBox fx:id="selectNcancel2" layoutX="6.0" layoutY="62.0" mnemonicParsing="false" />
                         <CheckBox fx:id="selectNcancel3" layoutX="6.0" layoutY="90.0" mnemonicParsing="false" />
                         <CheckBox fx:id="selectNcancel4" layoutX="6.0" layoutY="118.0" mnemonicParsing="false" />
@@ -238,9 +238,7 @@
 			            </ArrayList>
 			            </fx:define>
                         
-                        <Line endX="-100.00001525878906" endY="522.2000122070312" fill="#bfbfbf" layoutX="507.0" layoutY="35.0" startX="-100.00001525878906" startY="-39.40000534057617" stroke="#bfbfbf" strokeWidth="2.3" style="-fx-stroke: #911002;" />
-                        <AnchorPane>
-                        <children>                       
+                        <Line endX="-100.00001525878906" endY="522.2000122070312" fill="#bfbfbf" layoutX="507.0" layoutY="35.0" startX="-100.00001525878906" startY="-39.40000534057617" stroke="#bfbfbf" strokeWidth="2.3" style="-fx-stroke: #911002;" />                  
                         
                         <ComboBox fx:id="combo_box0" layoutX="408.0" layoutY="1.0" prefHeight="14.0" prefWidth="66.0" promptText="선택" style="-fx-background-color: #757575; -fx-background-radius: 0;">
                            <effect>
@@ -342,8 +340,6 @@
                               <Glow />
                            </effect>
                         </ComboBox>
-                        </children>
-                        </AnchorPane>
                         
                         <TextFlow layoutX="154.0" layoutY="-1.0" prefHeight="28.0" prefWidth="253.0">
                         	<children>
